@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="428.0" prefWidth="860.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="program.ui.SellerViewController">
+   <children>
+      <Button layoutX="30.0" layoutY="30.0" mnemonicParsing="false" onAction="#sellBtnAction" prefWidth="80.0" text="Sell">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="130.0" layoutY="30.0" mnemonicParsing="false" onAction="#updateBtnAction" prefWidth="80.0" text="Update">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="230.0" layoutY="30.0" mnemonicParsing="false" onAction="#closeDealBtnAction" prefWidth="80.0" text="Close a deal">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <TableView fx:id="productCatalog" layoutX="30.0" layoutY="100.0" prefHeight="300.0" prefWidth="800.0">
+        <columns>
+          <TableColumn fx:id="idCol" prefWidth="75.0" text="ID" />
+          <TableColumn fx:id="priceCol" prefWidth="75.0" text="Price" />
+            <TableColumn fx:id="brandCol" prefWidth="75.0" text="Brand" />
+            <TableColumn fx:id="colorCol" prefWidth="75.0" text="Color" />
+            <TableColumn fx:id="detailsCol" prefWidth="500.0" text="Details" />
+        </columns>
+      </TableView>
+      <Button layoutX="330.0" layoutY="30.0" mnemonicParsing="false" onAction="#saveBtnAction" prefWidth="80.0" text="Save">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="430.0" layoutY="30.0" mnemonicParsing="false" onAction="#logoutBtnAction" prefWidth="80.0" text="Logout">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Label alignment="CENTER" layoutX="371.0" layoutY="69.0" prefHeight="20.0" prefWidth="118.0" text="Products Catalog" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
